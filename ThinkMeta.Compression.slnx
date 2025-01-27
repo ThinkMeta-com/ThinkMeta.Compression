@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Solution Files/" Id="812c008e-f459-4b2d-ac22-d4b7177a2698">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.Props" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/ThinkMeta.SolutionFiles/" Id="c2ccc8db-c123-4ebb-ad12-49ab18fb0e49">
+    <File Path="ThinkMeta.SolutionFiles/.editorconfig" />
+    <File Path="ThinkMeta.SolutionFiles/LICENSE" />
+    <File Path="ThinkMeta.SolutionFiles/ThinkMeta.Build.props" />
+    <File Path="ThinkMeta.SolutionFiles/ThinkMeta.Build.targets" />
+    <File Path="ThinkMeta.SolutionFiles/ThinkMeta.CsWarnings.props" />
+    <File Path="ThinkMeta.SolutionFiles/ThinkMeta.Packages.props" />
+  </Folder>
+  <Project Path="ThinkMeta.Compression/ThinkMeta.Compression.csproj" />
+</Solution>

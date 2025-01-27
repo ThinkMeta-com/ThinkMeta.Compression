@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Title>Helper classes for data compression</Title>
+    <Description>Helper classes for data compression</Description>
+    <Copyright>Copyright (c) 2025 ThinkMeta Software GmbH</Copyright>
+    <PackageProjectUrl>https://github.com/ThinkMeta-com/ThinkMeta.Compression</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ThinkMeta-com/ThinkMeta.Compression.git</RepositoryUrl>
+    <PackageTags>zip;gzip;compression</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
