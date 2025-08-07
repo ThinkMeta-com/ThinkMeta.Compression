@@ -9,7 +9,8 @@
     <RepositoryUrl>https://github.com/ThinkMeta-com/ThinkMeta.Compression.git</RepositoryUrl>
     <PackageTags>zip;gzip;compression</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
