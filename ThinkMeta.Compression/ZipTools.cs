@@ -45,7 +45,7 @@ public static class ZipTools
     public static async Task<Stream> CompressFilesToMemoryStreamAsync(IEnumerable<FileInfo> files)
     {
         var stream = new MemoryStream();
-        await CompressFilesToStreamAsync(files, stream);
+        await CompressFilesToStreamAsync(files, stream).ConfigureAwait(false);
         _ = stream.Seek(0, SeekOrigin.Begin);
 
         return stream;
@@ -63,7 +63,7 @@ public static class ZipTools
             var zipEntry = zipArchive.CreateEntry(file.Name, CompressionLevel.Optimal);
             using var output = zipEntry.Open();
             var bytes = await File.ReadAllBytesAsync(file.FullName);
-            await output.WriteAsync(bytes);
+            await output.WriteAsync(bytes).ConfigureAwait(false);
         }
     }
 }
