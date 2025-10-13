@@ -76,7 +76,7 @@ public static class ZipTools
     {
         ArgumentNullException.ThrowIfNull(files);
         var stream = new MemoryStream();
-        await CompressFilesToStreamAsync(files, stream);
+        await CompressFilesToStreamAsync(files, stream).ConfigureAwait(false);
         _ = stream.Seek(0, SeekOrigin.Begin);
 
         return stream;
@@ -103,7 +103,7 @@ public static class ZipTools
             var zipEntry = zipArchive.CreateEntry(file.Name, CompressionLevel.Optimal);
             using var output = zipEntry.Open();
             using var input = file.OpenRead();
-            await input.CopyToAsync(output);
+            await input.CopyToAsync(output).ConfigureAwait(false);
         }
     }
 }
