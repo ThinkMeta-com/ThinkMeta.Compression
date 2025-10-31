@@ -1,7 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
     <Title>Helper classes for data compression</Title>
     <Description>Helper classes for data compression</Description>
     <Copyright>Copyright (c) 2025 ThinkMeta Software GmbH</Copyright>
@@ -12,7 +10,6 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Version>1.0.2</Version>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
