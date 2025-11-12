@@ -101,7 +101,7 @@ public static class ZipTools
         using var zipArchive = new ZipArchive(stream, ZipArchiveMode.Create, true);
         foreach (var file in files) {
             var zipEntry = zipArchive.CreateEntry(file.Name, CompressionLevel.Optimal);
-            using var output = zipEntry.Open();
+            using var output = await zipEntry.OpenAsync().ConfigureAwait(false);
             using var input = file.OpenRead();
             await input.CopyToAsync(output).ConfigureAwait(false);
         }
